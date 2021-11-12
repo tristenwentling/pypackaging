@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: example-pkg-tristen.wentling
+Version: 0.0.1
+Summary: A small example package
+Home-page: https://github.com/pypa/sampleproject
+Author: Me Myself
+Author-email: tristen.wentling@example.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/pypa/sampleproject/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Python Packaging Tutorial
+
+### Notes
+
+[Tutorial URL](https://packaging.python.org/tutorials/packaging-projects/)
+[License Picker](https://choosealicense.com/)
+
+### Configuring metadata
+There are two types of metadata: static and dynamic.
+
+Static metadata (setup.cfg): guaranteed to be the same every time. This is simpler, easier to read, and avoids many common errors, like encoding errors.
+
+Dynamic metadata (setup.py): possibly non-deterministic. Any items that are dynamic or determined at install-time, as well as extension modules or extensions to setuptools, need to go into setup.py.
+
+Static metadata (setup.cfg) should be preferred. Dynamic metadata (setup.py) should be used only as an escape hatch when absolutely necessary. setup.py used to be required, but can be omitted with newer versions of setuptools and pip.
+
